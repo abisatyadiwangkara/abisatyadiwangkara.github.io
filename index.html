@@ -27,7 +27,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
 <body>
@@ -36,7 +37,8 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">abisatya.diwangkara@gmail.com</a>
+        <i class="bi bi-envelope-fill"></i><a href="mailto:abisatya.diwangkara@gmail.com">abisatya.diwangkara@gmail.com</a> 
+        <i class="bi bi-phone-fill phone-icon"></i> +62 852 3420 6616 
         <i class="bi bi-phone-fill phone-icon"></i> +62 812 3587 9777
       </div>
       <div class="social-links d-none d-md-block">
@@ -62,8 +64,8 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -135,145 +137,295 @@
       </div>
     </section><!-- End About Section -->
 
+    <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
-    <div id="cards_landscape_wrap-2">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-        <a href="">
-          <div class="card-flyer">
-            <div class="text-box">
-              <div class="image-box">
-                <img src="assets/img/product/offices-business-computer-desktop-computer.jpg" alt="" />
-              </div>
-              <div class="text-container">
-                <h6>Komputer</h6>
-                <p>Perdagangan Besar Komputer & Perlengkapan Komputer</p>
-              </div>
+      <div id="cards_landscape_wrap-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">            
+                <div class="card-flyer">
+                  <div class="text-box">
+                    <div class="image-box">
+                      <img src="assets/img/product/offices-business-computer-desktop-computer.jpg" alt="" />
+                    </div>
+                    <div class="text-container">
+                      <h6>Komputer</h6>
+                      <p>Perdagangan Besar Komputer & Perlengkapan Komputer</p>
+                    </div>
+                    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalKomputer">
+                      See Details
+                    </button>
+                    <!-- Modal Komputer -->
+                    <div class="modal fade" id="modalKomputer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- End Modal Komputer -->
+                  </div>
+                </div>            
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">            
+                <div class="card-flyer">
+                  <div class="text-box">
+                    <div class="image-box">
+                      <img src="assets/img/product/Usaha-Eceran.jpg" alt="" />
+                    </div>
+                    <div class="text-container">
+                      <h6>Makanan & Minuman</h6>
+                      <p>Perdagangan Besar Makanan & Minuman.</p>
+                    </div>
+                    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalMakanan">
+                      See Details
+                    </button>
+                    <!-- Modal Makanan-->
+                    <div class="modal fade" id="modalMakanan" tabindex="-1" aria-labelledby="makananModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="makananModalLabel">Makanan & Minuman</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- End Modal Makanan-->
+                  </div>
+                </div>            
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">            
+                <div class="card-flyer">
+                  <div class="text-box">
+                    <div class="image-box">
+                      <img src="assets/img/product/perkembangan-teknologi-tekstil-indonesia-era-4-0-210730174541.jpg" alt="" />
+                    </div>
+                    <div class="text-container">
+                      <h6>Teksil</h6>
+                      <p>Perdagangan Besar Barang Lainnya Dari Tekstil.</p>
+                    </div>
+                    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalTekstil">
+                      See Details
+                    </button>
+                    <!-- Modal Tekstil -->
+                    <div class="modal fade" id="modalTekstil" tabindex="-1" aria-labelledby="teksilModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="teksilModalLabel">Teksil</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- End Modal Tekstil -->
+                  </div>
+                </div>            
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">            
+                <div class="card-flyer">
+                  <div class="text-box">
+                    <div class="image-box">
+                      <img src="assets/img/product/Lab_Dokter.jpg" alt="" />
+                    </div>
+                    <div class="text-container">
+                      <h6>LABORATORIUM & FARMASI</h6>
+                      <p>Perdagangan Besar Alat Laboratorium Farmasi & Kedokteran.</p>
+                    </div>
+                    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalLab">
+                      See Details
+                    </button>
+                    <!-- Modal Lab-->
+                    <div class="modal fade" id="modalLab" tabindex="-1" aria-labelledby="labModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="labModalLabel">LABORATORIUM & FARMASI</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- End Modal Lab-->
+                  </div>
+                </div>            
             </div>
           </div>
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-        <a href="">
-          <div class="card-flyer">
-            <div class="text-box">
-              <div class="image-box">
-                <img src="assets/img/product/Usaha-Eceran.jpg" alt="" />
-              </div>
-              <div class="text-container">
-                <h6>Makanan & Minuman</h6>
-                <p>Perdagangan Besar Komputer & Minuman Lainnya.</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-        <a href="">
-          <div class="card-flyer">
-            <div class="text-box">
-              <div class="image-box">
-                <img src="assets/img/product/perkembangan-teknologi-tekstil-indonesia-era-4-0-210730174541.jpg" alt="" />
-              </div>
-              <div class="text-container">
-                <h6>Teksil</h6>
-                <p>Perdagangan Besar Barang Lainnya Dari Tekstil.</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-        <a href="">
-          <div class="card-flyer">
-            <div class="text-box">
-              <div class="image-box">
-                <img src="assets/img/product/Lab_Dokter.jpg" alt="" />
-              </div>
-              <div class="text-container">
-                <h6>LABORATORIUM & FARMASI</h6>
-                <p>Perdagangan Besar Alat Laboratorium Farmasi & Kedokteran.</p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-    </div>       
-<!-- Topic Cards -->
-    <div id="cards_landscape_wrap-2">
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="">
-                        <div class="card-flyer">
-                            <div class="text-box">
-                                <div class="image-box">
-                                    <img src="assets/img/product/desain-perabotan-untuk-rumah.jpeg" alt="" />
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">                    
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/product/desain-perabotan-untuk-rumah.jpeg" alt="" />
+                            </div>
+                            <div class="text-container">
+                                <h6>ALAT RUMAH TANGGA</h6>
+                                <p>Perdagangan Besar Berbagai Barang & Perlengkapan Rumah Tangga.</p>
+                            </div>
+                            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalAlat">
+                              See Details
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalAlat" tabindex="-1" aria-labelledby="alatModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="alatModalLabel">ALAT RUMAH TANGGA</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    ...
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                  </div>
                                 </div>
-                                <div class="text-container">
-                                    <h6>ALAT RUMAH TANGGA</h6>
-                                    <p>Perdagangan Besar Berbagai Barang & Perlengkapan Rumah Tangga.</p>
-                                </div>
+                              </div>
                             </div>
                         </div>
-                    </a>
+                    </div>                    
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="">
-                        <div class="card-flyer">
-                            <div class="text-box">
-                                <div class="image-box">
-                                    <img src="assets/img/product/Kontraktor-vs-Pemborong-scaled.jpg" alt="" />
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">                    
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/product/Kontraktor-vs-Pemborong-scaled.jpg" alt="" />
+                            </div>
+                            <div class="text-container">                                    
+                                <h6>BUILDING KONTRAKTOR</h6>
+                                <p>Jasa Pembangunan Gedung Konstruksi dan Bangunan Lainnya.</p>
+                            </div>
+                            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalKontraktor">
+                              See Details
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalKontraktor" tabindex="-1" aria-labelledby="kontraktorModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="kontraktorModalLabel">BUILDING KONTRAKTOR</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    ...
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                  </div>
                                 </div>
-                                <div class="text-container">                                    
-                                    <h6>BUILDING KONTRAKTOR</h6>
-                                    <p>Jasa Pembangunan Gedung Konstruksi dan Bangunan Lainnya.</p>
-                                </div>
+                              </div>
                             </div>
                         </div>
-                    </a>
+                    </div>                    
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="">
-                        <div class="card-flyer">
-                            <div class="text-box">
-                                <div class="image-box">
-                                    <img src="assets/img/product/Basic-Mechanical-Electrical-Plumbing-Training.jpg" alt="" />
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">                    
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/product/Basic-Mechanical-Electrical-Plumbing-Training.jpg" alt="" />
+                            </div>
+    
+                            <div class="text-container">
+                                <h6>MECHANICAL ELECTRICAL</h6>
+                              <p>Reparasi Motor Listrik, Generator & Transformation.</p>
+                            </div>
+                            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalME">
+                              See Details
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalME" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    ...
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                  </div>
                                 </div>
-
-                                <div class="text-container">
-                                    <h6>MECHANICAL ELECTRICAL</h6>
-                                   <p>Reparasi Motor Listrik, Generator & Transformation.</p>
-                                </div>
+                              </div>
                             </div>
                         </div>
-                    </a>
+                    </div>                    
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="">
-                        <div class="card-flyer">
-                            <div class="text-box">
-                                <div class="image-box">
-                                    <img src="assets/img/product/konstruksi_.jpg" alt="" />
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">                    
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="image-box">
+                                <img src="assets/img/product/Mabler.jpg" alt="" />
+                            </div>
+                            <div class="text-container">
+                                <h6>Interior Mabler</h6>
+                              <p>Pembuatan Design interior, Supply, & Pemasangan.</p>
+                            </div>
+                            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalSuku">
+                              See Details
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalSuku" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    ...
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                  </div>
                                 </div>
-                                <div class="text-container">
-                                    <h6>SUKU CADANG</h6>
-                                   <p>Perdagangan Suku Cadang Electronik.</p>
-                                </div>
+                              </div>
                             </div>
                         </div>
-                    </a>
+                    </div>                    
                 </div>
             </div>
         </div>
-    </div>
-  </section>
+      </div>       
+    </section>
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
+    <!-- <section id="clients" class="clients" hidden>
       <div class="container" data-aos="zoom-in">
 
         <div class="row d-flex align-items-center">
@@ -305,11 +457,8 @@
         </div>
 
       </div>
-    </section><!-- End Clients Section -->
-
-    <!-- SERVICES -->
-
-   <!-- END SERVICES -->
+    </section> -->
+    <!-- End Clients Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -402,11 +551,10 @@
         </div>
 
       </div>
-    </section>
-    <!-- End Cta Section -->
+    </section><!-- End Cta Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <!-- <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio">
       <div class="container">
 
         <div class="section-title">
@@ -434,7 +582,7 @@
               <h4>App 1</h4>
               <p>App</p>
               <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
@@ -444,7 +592,7 @@
               <h4>Web 3</h4>
               <p>Web</p>
               <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
@@ -454,7 +602,7 @@
               <h4>App 2</h4>
               <p>App</p>
               <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
@@ -464,7 +612,7 @@
               <h4>Card 2</h4>
               <p>Card</p>
               <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
@@ -474,7 +622,7 @@
               <h4>Web 2</h4>
               <p>Web</p>
               <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
@@ -484,7 +632,7 @@
               <h4>App 3</h4>
               <p>App</p>
               <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
@@ -494,7 +642,7 @@
               <h4>Card 1</h4>
               <p>Card</p>
               <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
@@ -504,7 +652,7 @@
               <h4>Card 3</h4>
               <p>Card</p>
               <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
@@ -514,15 +662,14 @@
               <h4>Web 3</h4>
               <p>Web</p>
               <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
             </div>
           </div>
 
         </div>
 
       </div>
-    </section> -->
-    <!-- End Portfolio Section -->
+    </section><!-- End Portfolio Section -->
 
     <!-- ======= Pricing Section ======= -->
     <!-- <section id="pricing" class="pricing">
@@ -668,7 +815,7 @@
         <div class="section-title">
           <span>Contact</span>
           <h2>Contact</h2>
-          <p>Sebagian besar pertanyaan dapat dijawab dengan mengunjungi halaman Layanan Pelanggan kami. Namun, 
+          <p>Sebagian besar pertanyaan dapat dijawab dengan mengunjungi halaman layanan pelanggan kami. Namun, 
             kami selalu siap membantu dan tersedia melalui obrolan langsung, telepon, atau email.
           </p>
         </div>
@@ -696,6 +843,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
               <h3>Call Us</h3>
+              <p>+62 852 3420 6616</p>
               <p>+62 812 3587 9777</p>
             </div>
           </div>
@@ -738,6 +886,7 @@
       </div>
     </section><!-- End Contact Section -->
 
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -752,6 +901,7 @@
               <p>
                 WONOREJO TIMUR BLOK B7 - No. 4F <br>
                 Kel. Wonorejo, Kec. Rungkut, Kota Surabaya<br>Prov. Jawa Timur<br>
+                <strong>Phone:</strong> +62 852 3420 6616<br>
                 <strong>Phone:</strong> +62 812 3587 9777<br>
                 <strong>Email:</strong> abisatya.diwangkara@gmail.com
                 <br>
@@ -810,7 +960,8 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ -->
-        Designed by <a href="https://rezarandall.github.io/">Reza Randall</a>
+        Designed by <a target="_blank" href="https://rezarandall.github.io/">Reza Randall</a>
+        <!-- <a target="_blank" rel="noopener noreferrer" href="http://your_url_here.html">Link</a> -->
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -828,7 +979,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>
