@@ -240,3 +240,32 @@
   });
 
 })()
+
+// JSKU
+var buttons = document.querySelectorAll(".toggle-button");
+var modal = document.querySelector("#modal");
+
+[].forEach.call(buttons, function (button) {
+  button.addEventListener("click", function () {
+    modal.classList.toggle("off");
+  });
+});
+
+// disabled inspect element
+// document.onkeydown = (e) => {
+//   if (e.key == 123) {
+//       e.preventDefault();
+//   }
+//   if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+//       e.preventDefault();
+//   }
+//   if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+//       e.preventDefault();
+//   }
+//   if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+//       e.preventDefault();
+//   }
+//   if (e.ctrlKey && e.key == 'U') {
+//       e.preventDefault();
+//   }
+// };

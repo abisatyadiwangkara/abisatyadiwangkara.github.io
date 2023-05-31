@@ -28,10 +28,11 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
 </head>
 
-<body>
+<body oncontextmenu="return false">
+<!-- <body> -->
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
@@ -152,27 +153,37 @@
                       <h6>Komputer</h6>
                       <p>Perdagangan Besar Komputer & Perlengkapan Komputer</p>
                     </div>
-                    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalKomputer">
-                      See Details
-                    </button>
+                    <div class="btnSeeDetails">
+                      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalKomputer">
+                        See Details
+                      </button>                      
+                    </div>
                     <!-- Modal Komputer -->
-                    <div class="modal fade" id="modalKomputer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
+                    <div class="modal fade" id="modalKomputer" tabindex="-1" aria-labelledby="komputerModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <h2 class="modal-title fs-5" id="komputerModalLabel">Perdagangan Besar Komputer & Perlengkapan Komputer</h2>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
-                          <div class="modal-body">
-                            ...
+                          <div class="modal-body">                            
+                            Kami menyediakan solusi perdagangan besar komputer dan perlengkapan komputer yang tepat untuk perusahaan
+                               Anda. Dengan produk berkualitas tinggi dan layanan yang handal, kami siap membantu memenuhi kebutuhan 
+                               teknologi perusahaan Anda. Kami menawarkan berbagai macam komputer, mulai dari desktop hingga laptop 
+                               yang dirancang untuk kinerja optimal dan kehandalan. Selain itu, kami juga menyediakan perlengkapan 
+                               komputer terkini seperti printer, scanner, dan perangkat penyimpanan data yang dapat meningkatkan 
+                               efisiensi kerja Anda. Produk-produk kami berasal dari merek terpercaya dan kami menawarkan harga yang 
+                               kompetitif. Dengan dukungan teknis yang profesional dan pelayanan pelanggan yang responsif, 
+                               kami berkomitmen untuk memberikan pengalaman belanja yang memuaskan. Hubungi kami sekarang untuk 
+                               mendapatkan solusi komputer yang sesuai dengan kebutuhan bisnis Anda!                              
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn" data-bs-dismiss="modal">OK</button>
                           </div>
                         </div>
                       </div>
-                    </div><!-- End Modal Komputer -->
+                    </div>
+                    <!-- End Modal Komputer -->
                   </div>
                 </div>            
             </div>
@@ -191,18 +202,17 @@
                     </button>
                     <!-- Modal Makanan-->
                     <div class="modal fade" id="modalMakanan" tabindex="-1" aria-labelledby="makananModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
+                      <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="makananModalLabel">Makanan & Minuman</h1>
+                            <h2 class="modal-title fs-5" id="makananModalLabel">Perdagangan Besar Makanan & Minuman.</h2>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                            ...
+                            Kami adalah perusahaan perdagangan besar makanan dan minuman yang siap memenuhi kebutuhan Anda. Kami menawarkan berbagai produk berkualitas tinggi yang akan memikat selera pelanggan Anda. Dari makanan segar hingga minuman penyegar, kami memiliki beragam pilihan yang dapat meningkatkan nilai bisnis Anda. Kami bangga menyediakan produk-produk terbaik dengan harga yang kompetitif, menjadikan kami mitra terpercaya untuk pelanggan dari berbagai sektor industri. Dengan pelayanan yang profesional dan fleksibilitas dalam pengiriman, kami siap memenuhi kebutuhan Anda secara efisien dan tepat waktu. Hubungi kami sekarang untuk memulai kerjasama yang menguntungkan dan memberikan pengalaman belanja yang memuaskan bagi pelanggan Anda.
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn" data-bs-dismiss="modal">OK</button>
                           </div>
                         </div>
                       </div>
@@ -225,18 +235,17 @@
                     </button>
                     <!-- Modal Tekstil -->
                     <div class="modal fade" id="modalTekstil" tabindex="-1" aria-labelledby="teksilModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
+                      <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="teksilModalLabel">Teksil</h1>
+                            <h2 class="modal-title fs-5" id="teksilModalLabel">Perdagangan Besar Barang Dari Tekstil</h2>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                            ...
+                            Kami merupakan perusahaan perdagangan besar yang bergerak di bidang tekstil, dengan tujuan menyediakan produk berkualitas tinggi bagi pelanggan kami. Kami menawarkan berbagai macam produk tekstil terbaik, mulai dari kain hingga pakaian jadi, yang diproduksi dengan menggunakan bahan-bahan terbaik dan teknik manufaktur terkini. Kualitas produk kami tak tertandingi, dan kami berkomitmen untuk memberikan layanan pelanggan yang sangat baik. Dalam menjalankan bisnis kami, kami selalu berorientasi pada kepuasan pelanggan, dengan menawarkan harga yang kompetitif dan kesempatan kerjasama jangka panjang yang saling menguntungkan. Jika Anda mencari mitra yang dapat dipercaya dalam bisnis tekstil, jangan ragu untuk menghubungi kami. Kami siap memberikan solusi tekstil yang inovatif dan membantu Anda mencapai keberhasilan dalam bisnis Anda.
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn" data-bs-dismiss="modal">OK</button>
                           </div>
                         </div>
                       </div>
@@ -259,18 +268,17 @@
                     </button>
                     <!-- Modal Lab-->
                     <div class="modal fade" id="modalLab" tabindex="-1" aria-labelledby="labModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
+                      <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="labModalLabel">LABORATORIUM & FARMASI</h1>
+                            <h2 class="modal-title fs-5" id="labModalLabel">Perdagangan Besar Alat Laboratorium Farmasi & Kedokteran.</h2>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                            ...
+                            Perusahaan kami merupakan penyedia terkemuka dalam perdagangan besar alat laboratorium farmasi dan kedokteran. Kami menyediakan beragam produk berkualitas tinggi yang dirancang khusus untuk memenuhi kebutuhan laboratorium di industri farmasi dan kedokteran. Produk-produk kami mencakup peralatan analisis kimia, mikroskop, alat-alat pengukuran presisi, peralatan sterilisasi, dan masih banyak lagi. Keunggulan kami terletak pada komitmen kami untuk menyediakan produk-produk terbaik yang dijamin keakuratannya dan mendukung penelitian dan pengembangan di bidang kesehatan. Dengan berbagai produk unggulan kami, kami siap membantu pelanggan kami mencapai kesuksesan dalam upaya mereka di bidang penelitian dan pengembangan. Jika Anda mencari alat laboratorium farmasi dan kedokteran berkualitas tinggi, jangan ragu untuk menghubungi kami dan bergabung dengan jaringan pelanggan kami yang puas.
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn" data-bs-dismiss="modal">OK</button>
                           </div>
                         </div>
                       </div>
@@ -297,18 +305,17 @@
                             </button>
                             <!-- Modal -->
                             <div class="modal fade" id="modalAlat" tabindex="-1" aria-labelledby="alatModalLabel" aria-hidden="true">
-                              <div class="modal-dialog">
+                              <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="alatModalLabel">ALAT RUMAH TANGGA</h1>
+                                    <h2 class="modal-title fs-5" id="alatModalLabel">Perdagangan Besar Berbagai Barang & Perlengkapan Rumah Tangga.</h2>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                   </div>
                                   <div class="modal-body">
-                                    ...
+                                    Abisatya Dewangkara adalah salah satu pelopor dalam perdagangan besar berbagai barang dan perlengkapan rumah tangga. Dengan pengalaman yang solid dan reputasi yang terpercaya, kami menyediakan beragam produk berkualitas tinggi yang dirancang untuk memenuhi kebutuhan sehari-hari di rumah tangga. Dari peralatan dapur modern hingga perlengkapan kebersihan terkini, kami menawarkan solusi yang inovatif dan fungsional bagi pelanggan kami. Dengan fokus pada kualitas, keandalan, dan kepuasan pelanggan, kami memastikan bahwa setiap produk yang kami tawarkan telah melewati pengujian ketat sebelum sampai di tangan Anda. Jika Anda mencari penyedia barang dan perlengkapan rumah tangga terbaik, jangan ragu untuk menghubungi kami di ABC Trading. Tim kami yang berdedikasi siap memberikan informasi lebih lanjut, memberikan saran, dan membantu Anda memilih produk yang tepat untuk memenuhi kebutuhan rumah tangga Anda.
                                   </div>
                                   <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn" data-bs-dismiss="modal">OK</button>
                                   </div>
                                 </div>
                               </div>
@@ -331,18 +338,23 @@
                             </button>
                             <!-- Modal -->
                             <div class="modal fade" id="modalKontraktor" tabindex="-1" aria-labelledby="kontraktorModalLabel" aria-hidden="true">
-                              <div class="modal-dialog">
+                              <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="kontraktorModalLabel">BUILDING KONTRAKTOR</h1>
+                                    <h2 class="modal-title fs-5" id="kontraktorModalLabel">Jasa Pembangunan Gedung Konstruksi dan Bangunan Lainnya.</h2>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                   </div>
                                   <div class="modal-body">
-                                    ...
+                                    <p> Kami menawarkan Jasa Pembangunan Gedung Konstruksi dan Bangunan yang andal dan berkualitas tinggi untuk perusahaan Anda. Dengan tim profesional kami yang terdiri dari para ahli konstruksi berpengalaman, kami memiliki keahlian dan pengetahuan yang diperlukan untuk menghadirkan proyek-proyek bangunan yang luar biasa. Kami berkomitmen untuk memberikan solusi yang sesuai dengan kebutuhan dan visi perusahaan Anda.</p>
+                                    <br>
+                                    <p> Produk-produk unggulan kami meliputi pembangunan gedung komersial, rumah tinggal, dan fasilitas industri. Kami mengutamakan kualitas dan ketepatan waktu dalam setiap langkah pembangunan. Kami memastikan penggunaan bahan bangunan berkualitas tinggi dan teknologi terkini untuk memastikan bahwa proyek Anda tahan lama dan memenuhi standar keselamatan yang ketat.</p>
+                                    <br>
+                                    <p> Kami juga menawarkan layanan konsultasi yang komprehensif untuk membantu Anda merencanakan dan merancang proyek pembangunan Anda. Tim kami akan bekerja sama dengan Anda untuk mengidentifikasi kebutuhan spesifik, memberikan saran profesional, dan menghasilkan solusi yang inovatif.</p>
+                                    <br>
+                                    <p>Kami bangga dengan reputasi kami sebagai penyedia jasa pembangunan yang dapat diandalkan dan kami selalu berkomitmen untuk memberikan layanan terbaik kepada pelanggan kami. Jika Anda tertarik untuk memulai proyek pembangunan yang menarik, jangan ragu untuk menghubungi kami. Kami siap membantu Anda mewujudkan visi bangunan impian Anda.</p>
                                   </div>
                                   <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn" data-bs-dismiss="modal">OK</button>
                                   </div>
                                 </div>
                               </div>
@@ -356,28 +368,27 @@
                             <div class="image-box">
                                 <img src="assets/img/product/Basic-Mechanical-Electrical-Plumbing-Training.jpg" alt="" />
                             </div>
-    
+
                             <div class="text-container">
                                 <h6>MECHANICAL ELECTRICAL</h6>
                               <p>Reparasi Motor Listrik, Generator & Transformation.</p>
                             </div>
-                            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalME">
+                            <button type="button" class="btn btn-primary mb-3 toggle-button" data-bs-toggle="modal" data-bs-target="#modalME">
                               See Details
                             </button>
                             <!-- Modal -->
                             <div class="modal fade" id="modalME" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                              <div class="modal-dialog">
+                              <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <h2 class="modal-title fs-5" id="exampleModalLabel">MECHANICAL ELECTRICAL</h2>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                   </div>
                                   <div class="modal-body">
-                                    ...
+                                    <p> Jasa Mechanical Electrical merupakan solusi terbaik bagi perusahaan Anda dalam menghadapi kebutuhan perawatan dan perbaikan sistem mekanik dan listrik. Kami adalah tim ahli yang siap memberikan layanan profesional dan berkualitas tinggi untuk memastikan operasional perusahaan berjalan dengan lancar dan efisien. Produk-produk unggulan kami meliputi perencanaan dan instalasi sistem kelistrikan, perawatan mesin industri, pemeliharaan AC dan pendingin, serta penanganan permasalahan listrik dan mekanik lainnya. Dengan pengalaman kami yang luas dan pendekatan yang inovatif, kami dapat menghadirkan solusi yang tepat untuk meningkatkan efisiensi energi, mengoptimalkan produksi, dan mengurangi risiko kerusakan. Hubungi kami sekarang untuk mendapatkan pelayanan terbaik dan jaminan kepuasan pelanggan.</p>
                                   </div>
                                   <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn" data-bs-dismiss="modal">OK</button>
                                   </div>
                                 </div>
                               </div>
@@ -393,25 +404,32 @@
                             </div>
                             <div class="text-container">
                                 <h6>Interior Mabler</h6>
-                              <p>Pembuatan Design interior, Supply, & Pemasangan.</p>
+                              <p>Pembuatan Design interior, Supply & Pemasangan.</p>
                             </div>
                             <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalSuku">
                               See Details
                             </button>
                             <!-- Modal -->
                             <div class="modal fade" id="modalSuku" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                              <div class="modal-dialog">
+                              <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <h2 class="modal-title fs-5" id="exampleModalLabel">Pembuatan Design interior, Supply & Pemasangan.</h2>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                   </div>
                                   <div class="modal-body">
-                                    ...
+                                    <p>Kami adalah sebuah perusahaan yang mengkhususkan diri dalam pembuatan desain interior yang unik dan berkualitas tinggi, serta menyediakan berbagai macam produk dan layanan terkait untuk memenuhi kebutuhan pelanggan. Tim ahli desain interior kami memiliki pengalaman dan kreativitas yang luas untuk menciptakan ruang yang memukau dan sesuai dengan gaya dan preferensi individu. </p>
+                                    <br>
+                                    <p>Dengan menggunakan pendekatan yang berfokus pada kepuasan pelanggan, kami bekerja sama dengan mereka untuk mengidentifikasi kebutuhan dan impian mereka, menggabungkan elemen fungsionalitas dan estetika yang sempurna.</p>
+                                    <br>
+                                    <p>Selain itu, kami juga menyediakan produk berkualitas tinggi, seperti furnitur kustom, aksesori dekoratif, dan perlengkapan rumah tangga lainnya, yang dipilih dengan hati-hati untuk memastikan kepuasan pelanggan. </p>
+                                    <br>
+                                    <p>Setelah desain disetujui, tim profesional kami akan mengatur proses pengadaan dan memastikan pengiriman tepat waktu serta pemasangan yang sempurna, dengan fokus pada kualitas, keindahan, dan kepuasan pelanggan, kami siap membantu mewujudkan impian desain interior yang sempurna.</p>
+                                    <br>
+                                    <p>Hubungi kami sekarang untuk mendapatkan konsultasi gratis dan mulailah menciptakan ruang yang memikat.</p>
                                   </div>
                                   <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn" data-bs-dismiss="modal">OK</button>
                                   </div>
                                 </div>
                               </div>
@@ -547,7 +565,11 @@
             yang sesuai dengan kebutuhan Anda. Kami akan mendengarkan dengan seksama, memberikan saran yang terpercaya, 
             dan membantu Anda membuat keputusan yang tepat. Jangan ragu untuk menghubungi kami sekarang dan jadwalkan 
             konsultasi gratis yang akan membawa Anda menuju langkah selanjutnya dalam mencapai tujuan Anda.</p>
-          <a class="cta-btn" href="#contact">Call To Action</a>
+          <!-- <a class="cta-btn" href="#contact">Call To Action</a> -->
+          <!-- <a href="#contact">
+            <span class='pulse-button'>Hubungi</span>
+          </a> -->
+          <a href="#contact" class="custom-btn btn-11">Hubungu Kami!<div class="dot"></div></a>
         </div>
 
       </div>
@@ -560,7 +582,7 @@
         <div class="section-title">
           <span>Portfolio</span>
           <h2>Portfolio</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -930,11 +952,11 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Building Contractor</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Mechanical Electrical</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Computers Supply</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Medicide & Pharmacy Lab</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Event Organizer</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#why-us">Building Contractor</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#why-us">Mechanical Electrical</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#why-us">Computers Supply</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#why-us">Medicide & Pharmacy Lab</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#why-us">Event Organizer</a></li>
             </ul>
           </div>
 
@@ -979,7 +1001,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
