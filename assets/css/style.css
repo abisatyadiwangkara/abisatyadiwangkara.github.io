@@ -114,10 +114,32 @@ h6 {
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
+.contact-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .contact-info {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .contact-item {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
 #topbar {
   background: #191919;
   font-size: 15px;
-  height: 40px;
+  height: auto;
   padding: 0;
   color: rgba(255, 255, 255, 0.6);
 }
